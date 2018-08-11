@@ -1,0 +1,13 @@
+{
+  "name": "import_pantries",
+  "version": "0.0.1",
+  "description": "CLI Utility to import from table",
+  "main": "importer.js",
+  "author": "Josh Johnson",
+  "license": "ISC",
+  "dependencies": {
+    "tabletojson": "~0.9.4",
+    "rename-keys": "~2.0.1",
+    "node-geocoder": "~3.22.0"
+  }
+}
