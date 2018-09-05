@@ -39,32 +39,31 @@ function capturePantries(url, outputFile, completion) {
   });
 }
 
-// completely naive and non performant, need to better understand how promises work
 function geocodePantries(file) {
   var pantries = JSON.parse(fs.readFileSync(file, 'utf8'))["pantries"];
 
   // Setup Geocoder
   var geocoder = nodegeocoder(providerOptions);
 
-  function geocodePantry(index) {
-    var pantry = pantries[index];
-
+  // Get latitude and longitude for each pantry (async)
+  var promises = pantries.map(function(pantry) {
     var lookupAddress = pantry["address"] + " " + pantry["city"];
-    geocoder.geocode(lookupAddress, function(err, res) {
-      var latitude = res[0]["latitude"];
-      var longitude = res[0]["longitude"];
 
-      pantries[index]["latitude"] = latitude;
-      pantries[index]["longitude"] = longitude;
-      var output = { "pantries" : pantries };
+    return geocoder.geocode(lookupAddress)
+    .then(function(res) {
+      pantry.latitude = res[0]["latitude"];
+      pantry.longitude = res[0]["longitude"];
 
-      fs.writeFileSync(file, JSON.stringify(output));
+      return pantry;
     });
-  }
-
-  for (var i = 0; i < pantries.length; ++i) {
-    geocodePantry(i);
-  }
+  });
+  
+  // Once all promises resolved, write to file
+  Promise.all(promises).then(function(pantries) {
+    var output = { "pantries" : pantries };
+    
+    fs.writeFileSync(file, JSON.stringify(output));
+  });  
 }
 
 var output = "pantries.json";
