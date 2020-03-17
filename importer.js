@@ -62,7 +62,7 @@ function geocodePantries(file) {
   Promise.all(promises).then(function(pantries) {
     var output = { "pantries" : pantries };
     
-    fs.writeFileSync(file, JSON.stringify(output));
+    fs.writeFileSync(file, JSON.stringify(output, null, 2));
   });  
 }
 
