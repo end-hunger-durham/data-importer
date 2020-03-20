@@ -145,6 +145,18 @@
       "longitude": -78.90906199999999
     },
     {
+      "organizations": "Durham  Center for Senior Life",
+      "address": "406 Rigsbee Ave",
+      "city": "Durham, NC, 27702",
+      "days": "Drive by at Hunt St. Entrance",
+      "hours": "appt only",
+      "phone": "919 688 8247 Ext. 103 or 104",
+      "info": "hygiene and incontinence materials",
+      "prereq": "CALL FOR APPT., 55+ years of age",
+      "latitude": 35.9993384,
+      "longitude": -78.89923879999999
+    },
+    {
       "organizations": "Durham Spanish SDA Church",
       "address": "1606 Liberty St.",
       "city": "Durham, NC, 27703",
@@ -484,13 +496,25 @@
       "organizations": "Oak Grove Free Will Baptist Church",
       "address": "1008a Simmons St",
       "city": "",
-      "days": "Mon,Tthu",
+      "days": "Mon & Thu",
       "hours": "Mon 9:00 - 12:00, Thu 9:30  - 12:30",
-      "phone": "919680 2927",
+      "phone": "919 680 2927",
       "info": "Rental, uitiiies assistance",
       "prereq": "ID",
       "latitude": 35.9816049,
       "longitude": -78.8925971
+    },
+    {
+      "organizations": "Parktown Food Hub",
+      "address": "5123 Revere Road",
+      "city": "Durham, NC 27713",
+      "days": "1st, 2nd, 4th Mon",
+      "hours": "4:30 - 7:30",
+      "phone": "919 423-5057",
+      "info": "",
+      "prereq": "CALL FOR APPT.",
+      "latitude": 35.8944375,
+      "longitude": -78.909438
     },
     {
       "organizations": "Parkwood Mobile Pantry at Forest Glen Apts",
