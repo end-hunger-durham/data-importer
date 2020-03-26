@@ -18,6 +18,7 @@ function pantryGeocoder(providerOptions) {
       throw new Error("Invalid pantry for geocoding.");
     }
 
+    console.log('geocoding');
     var lookupAddress = pantry["address"] + " " + pantry["city"];
     return geocoder.geocode(lookupAddress).then(function(res) {
       return {
