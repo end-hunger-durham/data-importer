@@ -2,6 +2,7 @@ var fs = require('fs');
 var tabletojson = require('tabletojson');
 var renamekeys = require('rename-keys');
 var nodegeocoder = require('node-geocoder');
+var out = "pantries.json";
 
 var providerOptions = {
   provider: 'google',
@@ -9,63 +10,91 @@ var providerOptions = {
   formatter: null
 };
 
+function pantryGeocoder(providerOptions) {
+  var geocoder = nodegeocoder(providerOptions);
 
-function capturePantries(url, outputFile, completion) {
+  return async (pantry) => {
+    if (!pantry || !pantry.address || !pantry.city) {
+      throw new Error("Invalid pantry for geocoding.");
+    }
+
+    var lookupAddress = pantry["address"] + " " + pantry["city"];
+    return geocoder.geocode(lookupAddress).then(function(res) {
+      return {
+        latitude: res[0]["latitude"],
+        longitude: res[0]["longitude"],
+      };
+    });
+  };
+}
+
+function capturePantries(url, outputFile) {
+  var savedPantries = (() => {
+    var file = fs.readFileSync(out, 'utf8');
+    if (!file) return { pantries: [] };
+
+    return JSON.parse(file);
+  })();
+
   tabletojson.convertUrl(url, { useFirstRowForHeadings: true }, function(tablesAsJson) {
     // capture pantries table
     var rawPantries = tablesAsJson[0];
     rawPantries.shift();
 
+    // Setup Geocoder
+    var geocodePantry = pantryGeocoder(providerOptions);
+
+    const mergePantry = (src, target) => {
+      const {
+        organizations, address, city, days, hours, phone, info, prereq,
+      } = target;
+      if (src.organizations !== organizations) {
+        throw new Error("Pantries do not match!");
+      }
+      return {
+        organizations,
+        address,
+        city,
+        days,
+        hours,
+        phone,
+        info,
+        prereq,
+        latitude: src.latitude,
+        longitude: src.longitude,
+      };
+    };
+
     // clean up keys to remove '.' and lowercase
-    var target = []
-    for (index in rawPantries) {
-      var pantry = rawPantries[index];
-      var modified = renamekeys(pantry, function(key, value) {
+    var srcIndex = 0;
+    var pantryPromises = rawPantries.map((pantry) => {
+      var src = savedPantries.pantries[srcIndex];
+      var target = renamekeys(pantry, function(key) {
         return key.toLowerCase().replace(/[\.]/, '');
       });
 
-      // store modified 
-      target.push(modified);
-    }
+      // new pantry entry
+      if (!src || src.organizations !== target.organizations) {
+        return { ...target, ...geocodePantry(target) };
+      }
 
-    // build output
-    var output = { "pantries" : target };
+      srcIndex += 1;
+      const merged = mergePantry(src, target);
+      if (src.address === target.address && src.city === target.city) {
+        return merged;
+      }
 
-    // save as json
-    fs.writeFileSync(outputFile, JSON.stringify(output));
+      return { ...merged, ...geocodePantry(merged) };
+    });
 
-    // notify complete
-    completion(outputFile);
-  });
-}
+    // Once all promises resolved, write to file
+    Promise.all(pantryPromises).then(function(pantries) {
+      var output = { "pantries" : pantries };
 
-function geocodePantries(file) {
-  var pantries = JSON.parse(fs.readFileSync(file, 'utf8'))["pantries"];
-
-  // Setup Geocoder
-  var geocoder = nodegeocoder(providerOptions);
-
-  // Get latitude and longitude for each pantry (async)
-  var promises = pantries.map(function(pantry) {
-    var lookupAddress = pantry["address"] + " " + pantry["city"];
-
-    return geocoder.geocode(lookupAddress)
-    .then(function(res) {
-      pantry.latitude = res[0]["latitude"];
-      pantry.longitude = res[0]["longitude"];
-
-      return pantry;
+      fs.writeFileSync(outputFile, JSON.stringify(output, null, 2));
     });
   });
-  
-  // Once all promises resolved, write to file
-  Promise.all(promises).then(function(pantries) {
-    var output = { "pantries" : pantries };
-    
-    fs.writeFileSync(file, JSON.stringify(output, null, 2));
-  });  
 }
 
-var output = "pantries.json";
-capturePantries('http://www.endhungerdurham.org/food-pantries/', output, geocodePantries);
+capturePantries('http://www.endhungerdurham.org/food-pantries/', out);
 
