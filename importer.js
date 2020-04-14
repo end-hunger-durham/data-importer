@@ -32,9 +32,14 @@ function pantryGeocoder(providerOptions) {
 function capturePantries(url, outputFile) {
   var savedPantries = (() => {
     var file = fs.readFileSync(out, 'utf8');
-    if (!file) return { pantries: [] };
+    if (!file) return { pantries: {} };
 
-    return JSON.parse(file);
+    var pantriesList = JSON.parse(file).pantries;
+    var addresses = {};
+    pantriesList.forEach((pantryObj) => {
+      addresses[pantryObj.address] = pantryObj;
+    });
+    return addresses;
   })();
 
   tabletojson.convertUrl(url, { useFirstRowForHeadings: true }, function(tablesAsJson) {
@@ -49,9 +54,7 @@ function capturePantries(url, outputFile) {
       const {
         organizations, address, city, days, hours, phone, info, prereq,
       } = target;
-      if (src.organizations !== organizations) {
-        throw new Error("Pantries do not match!");
-      }
+
       return {
         organizations,
         address,
@@ -67,25 +70,17 @@ function capturePantries(url, outputFile) {
     };
 
     // clean up keys to remove '.' and lowercase
-    var srcIndex = 0;
     var pantryPromises = rawPantries.map((pantry) => {
-      var src = savedPantries.pantries[srcIndex];
       var target = renamekeys(pantry, function(key) {
         return key.toLowerCase().replace(/[\.]/, '');
       });
 
-      // new pantry entry
-      if (!src || src.organizations !== target.organizations) {
-        return { ...target, ...geocodePantry(target) };
+      // avoid geocoding if the address, lat, and lng were already saved
+      if (savedPantries[target.address]) {
+        return mergePantry(savedPantries[target.address], target);
       }
 
-      srcIndex += 1;
-      const merged = mergePantry(src, target);
-      if (src.address === target.address && src.city === target.city) {
-        return merged;
-      }
-
-      return { ...merged, ...geocodePantry(merged) };
+      return { ...target, ...geocodePantry(target) };
     });
 
     // Once all promises resolved, write to file
