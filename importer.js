@@ -80,7 +80,9 @@ function capturePantries(url, outputFile) {
         return mergePantry(savedPantries[target.address], target);
       }
 
-      return { ...target, ...geocodePantry(target) };
+      return geocodePantry(target).then((result) => {
+        return { ...target, ...result };
+      });
     });
 
     // Once all promises resolved, write to file
