@@ -32,7 +32,7 @@
       "hours": "10:00 - 12:00",
       "phone": "919-489-3963",
       "info": "summer camp, after school, kids meals",
-      "prereq": "",
+      "prereq": "Stay in car, clear space in trunk for food",
       "latitude": 35.9637641,
       "longitude": -78.91772979999999
     },
@@ -71,18 +71,6 @@
       "prereq": "Arrive early",
       "latitude": 36.0048945,
       "longitude": -78.8912927
-    },
-    {
-      "organizations": "Catholic Charities",
-      "address": "2020 Chapel Hill St., Suite 30",
-      "city": "Durham, NC, 27707",
-      "days": "Wed",
-      "hours": "10:00 - 1:00",
-      "phone": "919-286-1964",
-      "info": "Habla Español, Financial assistance -call 2nd Mon",
-      "prereq": "1x per month, verify household members.  BRING BAGS",
-      "latitude": 35.9895291,
-      "longitude": -78.92750099999999
     },
     {
       "organizations": "Christian Assembly",
@@ -151,10 +139,22 @@
       "days": "Drive by at Hunt St. Entrance",
       "hours": "appt only",
       "phone": "919 688 8247 Ext. 103 or 104",
-      "info": "hygiene and incontinence materials",
+      "info": "hygiene and incontinence supplies",
       "prereq": "CALL FOR APPT., 55+ years of age",
       "latitude": 35.9993384,
       "longitude": -78.89923879999999
+    },
+    {
+      "organizations": "Durham Community Food Pantry",
+      "address": "2020 Chapel Hill St., Suite 30",
+      "city": "Durham, NC, 27707",
+      "days": "Wed",
+      "hours": "10:00 - 1:00",
+      "phone": "919-286-1964",
+      "info": "Habla Español, Financial assistance -call 2nd Mon",
+      "prereq": "1x per month, verify household members.  Walkers Bring Bags",
+      "latitude": 35.9895291,
+      "longitude": -78.92750099999999
     },
     {
       "organizations": "Durham Spanish SDA Church",
@@ -271,7 +271,7 @@
       "days": "3rd Wed",
       "hours": "10:00 -12:00",
       "phone": "919-608-7525",
-      "info": "call for homebound delivery",
+      "info": "",
       "prereq": "",
       "latitude": 36.0327399,
       "longitude": -78.8649949
@@ -280,8 +280,8 @@
       "organizations": "Greystone Baptist (Second Mile Ministries)",
       "address": "2601 Hillsborough",
       "city": "Durham, NC, 27705",
-      "days": "Temp Closed",
-      "hours": "7:30",
+      "days": "Wed",
+      "hours": "9:30 - 11:30",
       "phone": "919-286-3596",
       "info": "emergency funds, referrals",
       "prereq": "Arrive at 7am; 1st 35 served, ID, 1x per 3 months",
@@ -402,11 +402,23 @@
       "city": "Durham, NC, 27703",
       "days": "1st, 3rd Fri TEMP CLOSED",
       "hours": "10:00 -12:00",
-      "phone": "919-382-1944",
+      "phone": "919-973-0055",
       "info": "",
       "prereq": "",
       "latitude": 35.9897258,
       "longitude": -78.87923049999999
+    },
+    {
+      "organizations": "Living Waters",
+      "address": "1104 Lynn Rd",
+      "city": "Durham, NC 27703",
+      "days": "Wed",
+      "hours": "6:00 - 7:00",
+      "phone": "919-596-6909",
+      "info": "",
+      "prereq": "CALL for appt. & to confirm pantry day & time",
+      "latitude": 35.971915,
+      "longitude": -78.84904999999999
     },
     {
       "organizations": "Ministerios Guerreros de Jesus Cristo International",
@@ -439,7 +451,7 @@
       "days": "2nd, 4th Wed",
       "hours": "5:30 - 6:30",
       "phone": "919-477-4296",
-      "info": "clothes & household closet",
+      "info": "",
       "prereq": "",
       "latitude": 36.167086,
       "longitude": -78.876278
@@ -461,7 +473,7 @@
       "address": "316 Hebron Rd.",
       "city": "Durham, NC, 27704",
       "days": "1st , 2nd & 4th Thu;  Nov-Dec: 1st, 2nd & 3rd Thu",
-      "hours": "4:00 - 7:00",
+      "hours": "2nd & 4th TH 4:00 - 7:00; 1st TH 5:00 - 7:00",
       "phone": "919-682-6466",
       "info": "",
       "prereq": "ID, 1x per month",
@@ -515,6 +527,18 @@
       "prereq": "ID",
       "latitude": 35.9816049,
       "longitude": -78.8925971
+    },
+    {
+      "organizations": "Obediance to the Word",
+      "address": "644 Bon Air Ave",
+      "city": "Durham, NC 27704",
+      "days": "Tu & Thu",
+      "hours": "By Appt",
+      "phone": "919-282-7277",
+      "info": "",
+      "prereq": "CALL FOR APPT.",
+      "latitude": 36.030373,
+      "longitude": -78.88239899999999
     },
     {
       "organizations": "Parktown Food Hub",
@@ -577,6 +601,18 @@
       "longitude": -78.8854312
     },
     {
+      "organizations": "Seed Time & Harvest Fellowship",
+      "address": "804 Berwyn Ave",
+      "city": "Durham, NC 27704",
+      "days": "Thu",
+      "hours": "11:30",
+      "phone": "919-220-2896",
+      "info": "Call for appt & confirm pantry time, day",
+      "prereq": "",
+      "latitude": 36.033017,
+      "longitude": -78.8804444
+    },
+    {
       "organizations": "Southside Church of Christ",
       "address": "800 Elmira Ave.",
       "city": "Durham, NC, 27707",
@@ -623,18 +659,6 @@
       "prereq": "ID, 1x per 3 months,",
       "latitude": 36.0549139,
       "longitude": -78.906981
-    },
-    {
-      "organizations": "United Nations Worship Center",
-      "address": "2100 Chapel Hill Rd.",
-      "city": "Durham, NC, 27707",
-      "days": "1st,& 3rd Thu",
-      "hours": "1:00 - 2:00",
-      "phone": "919-943-5255",
-      "info": "Habla Espanol",
-      "prereq": "",
-      "latitude": 35.9861728,
-      "longitude": -78.929222
     },
     {
       "organizations": "Urban Ministries",
