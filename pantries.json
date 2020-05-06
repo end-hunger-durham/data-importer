@@ -152,7 +152,7 @@
       "hours": "10:00 - 1:00",
       "phone": "919-286-1964",
       "info": "Habla Español, Financial assistance -call 2nd Mon",
-      "prereq": "1x per month, verify household members.  Walkers Bring Bags",
+      "prereq": "Adult ID, Curb pickup, trunk open",
       "latitude": 35.9895291,
       "longitude": -78.92750099999999
     },
@@ -257,7 +257,7 @@
       "address": "612 Gary St.",
       "city": "Durham, NC 27703",
       "days": "Tue Emergency, , 4th Sat",
-      "hours": "Tu 12:00 - 1:30;  4th Sat, 11:00 - 2:00",
+      "hours": "Tu 12:00 - 1:00;  4th Sat, 10:00 - 2:00",
       "phone": "919-423-3215",
       "info": "clothes, household, baby items",
       "prereq": "",
@@ -311,6 +311,18 @@
       "prereq": "",
       "latitude": 35.9946396,
       "longitude": -78.87973769999999
+    },
+    {
+      "organizations": "House of Mercy (Celebracion Cristiana)",
+      "address": "4823 Meadow Dr. Suite 106",
+      "city": "Durham, NC, 27713",
+      "days": "Thu.",
+      "hours": "6:00 - 7:00",
+      "phone": "",
+      "info": "drive-by pickup",
+      "prereq": "habla espanol",
+      "latitude": 35.898608,
+      "longitude": -78.89447799999999
     },
     {
       "organizations": "Iglesia Buen Pastor (IFFS)",
