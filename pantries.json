@@ -376,11 +376,11 @@
       "organizations": "Jewish Family Services",
       "address": "1937 Cornwallis Rd.",
       "city": "Durham, NC, 27705",
-      "days": "by appt.",
-      "hours": "by appt.",
+      "days": "Tue - CALL",
+      "hours": "1:00 - 3:00",
       "phone": "919-354-4922",
       "info": "financial assistance, counseling",
-      "prereq": "1x per month, ID, NOTE: Mar. 31 to Apr. 30 - email for pickup time: jschwartz@shalomdch.org",
+      "prereq": "CALL or email to be put on list. Erive up stay in car.  email: jschwartz@shalomdch.org",
       "latitude": 35.9794088,
       "longitude": -78.9554278
     },
@@ -395,18 +395,6 @@
       "prereq": "Call for appt.,  ID",
       "latitude": 35.9828714,
       "longitude": -78.87782829999999
-    },
-    {
-      "organizations": "Kings Park International Church",
-      "address": "4823 Meadow Dr. Suite 106",
-      "city": "Durham, NC, 27713",
-      "days": "Thu.",
-      "hours": "6:00 - 7:00",
-      "phone": "919-685-2800",
-      "info": "",
-      "prereq": "",
-      "latitude": 35.898608,
-      "longitude": -78.89447799999999
     },
     {
       "organizations": "Life International Church & Durham Parks and Rec",
