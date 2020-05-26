@@ -707,6 +707,18 @@
       "prereq": "Seniors Only, Call for Appt.",
       "latitude": 36.0281519,
       "longitude": -78.9100713
+    },
+    {
+      "organizations": "World Overcomers Church",
+      "address": "2933 S. Miami Blvd",
+      "city": "Durham, NC 277703",
+      "days": "Sat",
+      "hours": "12:00 - 3:00",
+      "phone": "919-402-9622",
+      "info": "",
+      "prereq": "Drive thru, Open Trunk",
+      "latitude": 35.9254416,
+      "longitude": -78.8434844
     }
   ]
 }
