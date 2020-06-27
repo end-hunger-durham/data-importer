@@ -109,6 +109,18 @@
       "longitude": -104.9431197
     },
     {
+      "organizations": "Community Empowerment Fund",
+      "address": "2634 Durham-Chapel Hill Blvd Suite 6",
+      "city": "Durham, NC, 27707",
+      "days": "Mon & Wed",
+      "hours": "call for times",
+      "phone": "919 797-9233",
+      "info": "",
+      "prereq": "",
+      "latitude": 35.9749284,
+      "longitude": -78.929266
+    },
+    {
       "organizations": "Divine Grace Fellowship and Outreach Ministry",
       "address": "1500 E Club Blvd, Bldg 100",
       "city": "Durham, NC, 27704",
@@ -182,7 +194,7 @@
     },
     {
       "organizations": "Fed Up Produce Distribution",
-      "address": "2000\nChapel Hill Rd  (Lakewood)",
+      "address": "2000 Chapel Hill Rd  (Lakewood)",
       "city": "Durham, NC, 27707",
       "days": "Friday June 26 & Every Other Friday",
       "hours": "",
