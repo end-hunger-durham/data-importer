@@ -145,6 +145,18 @@
       "longitude": -78.89923879999999
     },
     {
+      "organizations": "Durham Neighborhood Food Pantry (ICNA Relief)",
+      "address": "3034 Fayetteville St. @ Jamaat Ibab Ar Rahman Mosque",
+      "city": "Durham, NC 27707",
+      "days": "2nd Sat",
+      "hours": "2:00 - 4:00",
+      "phone": "",
+      "info": "Emergency food,  baby items, speak Arabic, Spanish,hygiene items on occasion",
+      "prereq": "Photo ID  Drive thru pickup, stay in car.",
+      "latitude": 35.9628473,
+      "longitude": -78.90865699999999
+    },
+    {
       "organizations": "Durham Community Food Pantry",
       "address": "2020 Chapel Hill St., Suite 30",
       "city": "Durham, NC, 27707",
@@ -247,7 +259,7 @@
       "days": "3rd Thu",
       "hours": "3:00 - 5:30",
       "phone": "919-423-3215",
-      "info": "call for delivery homebound 68+ years & older",
+      "info": "call for delivery homebound 68+ years & older, meals for children",
       "prereq": "",
       "latitude": 35.9845855,
       "longitude": -78.88367989999999
@@ -397,16 +409,16 @@
       "longitude": -78.87782829999999
     },
     {
-      "organizations": "Life International Church & Durham Parks and Rec",
-      "address": "Holton Career & Resource Ctr. 401 N. Driver St.",
-      "city": "Durham, NC, 27703",
-      "days": "1st, 3rd Fri TEMP CLOSED",
-      "hours": "10:00 -12:00",
-      "phone": "919-973-0055",
-      "info": "",
+      "organizations": "Life International Church",
+      "address": "4823 Meadow Dr.",
+      "city": "Durham, NC, 27713",
+      "days": "3rd Sat",
+      "hours": "10:00 -1:00",
+      "phone": "",
+      "info": "Drive thru; stay in car",
       "prereq": "",
-      "latitude": 35.9897258,
-      "longitude": -78.87923049999999
+      "latitude": 35.898608,
+      "longitude": -78.89447799999999
     },
     {
       "organizations": "Living Waters",
@@ -671,18 +683,6 @@
       "prereq": "2 families per car limit",
       "latitude": 35.9934067,
       "longitude": -78.8959794
-    },
-    {
-      "organizations": "Urban Ministries",
-      "address": "411 Liberty St.",
-      "city": "Durham, NC, 27702",
-      "days": "Mon, Wed, Fri TEMP CLOSED",
-      "hours": "1:00 - 3:00",
-      "phone": "919-682-0538",
-      "info": "clothes, shelter, trainings, referral",
-      "prereq": "ID, age- 62+; disabled (proof), children (birth certificate or medicaid card)",
-      "latitude": 35.994116,
-      "longitude": -78.894886
     },
     {
       "organizations": "Walltown Ministries (including St. John Missionary Baptist)",
