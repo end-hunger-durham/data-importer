@@ -15,6 +15,7 @@ function pantryGeocoder(providerOptions) {
 
   return async (pantry) => {
     if (!pantry || !pantry.address || !pantry.city) {
+      console.error(pantry);
       throw new Error("Invalid pantry for geocoding.");
     }
 
