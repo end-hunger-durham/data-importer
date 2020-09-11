@@ -244,7 +244,7 @@
       "organizations": "Grace  Church of Durham",
       "address": "1417 Cole Mill Rd.",
       "city": "Durham, NC,  277078",
-      "days": "Tu, 3rd Sat. Sun",
+      "days": "Tu, 3rd Sat. Sun TEMP CLOSED",
       "hours": "Tu- 5:00 - 6:30; 3rd Sat 10:00 - 12:00;  Sun 12:30 - 2:00",
       "phone": "919-908-6213",
       "info": "",
@@ -577,6 +577,18 @@
       "longitude": -78.9001796
     },
     {
+      "organizations": "Project of Hope Pantry @World Overcomers Church",
+      "address": "2933 S. Miami Blvd",
+      "city": "Durham, NC 27703",
+      "days": "Sat, Sept, 12 & 19; Oct. 17 & 24;  then every Sat.",
+      "hours": "11:00 - 3:00",
+      "phone": "919-402-9622",
+      "info": "",
+      "prereq": "Drive Thru, Open Trunk",
+      "latitude": 35.9254416,
+      "longitude": -78.8434844
+    },
+    {
       "organizations": "Rougemont  Community Food Pantry (Rougemont UMC)",
       "address": "105 Red Mountain Rd.",
       "city": "Rougemont, NC, 27572",
@@ -723,7 +735,7 @@
     {
       "organizations": "World Overcomers Church",
       "address": "2933 S. Miami Blvd",
-      "city": "Durham, NC 277703",
+      "city": "Durham, NC 27703",
       "days": "Sat",
       "hours": "11:00 - 1:00",
       "phone": "919-402-9622",
