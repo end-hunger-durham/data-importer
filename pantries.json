@@ -244,7 +244,7 @@
       "organizations": "Grace  Church of Durham",
       "address": "1417 Cole Mill Rd.",
       "city": "Durham, NC,  277078",
-      "days": "Tu, 3rd Sat. Sun TEMP CLOSED",
+      "days": "Tu, 3rd Sat.",
       "hours": "Tu- 5:00 - 6:30; 3rd Sat 10:00 - 12:00;  Sun 12:30 - 2:00",
       "phone": "919-908-6213",
       "info": "",
@@ -481,16 +481,28 @@
       "longitude": -78.8906737
     },
     {
-      "organizations": "Mt. Level Missionary Baptist (Two Fish, Five Loaves )",
+      "organizations": "Mt. Level Baptist (Two Fish, Five Loaves )",
       "address": "316 Hebron Rd.",
       "city": "Durham, NC, 27704",
-      "days": "1st , 2nd & 4th Thu;  Nov-Dec: 1st, 2nd & 3rd Thu",
-      "hours": "2nd & 4th TH 4:00 - 7:00; 1st TH 5:00 - 7:00",
+      "days": "Oct. 15 & 22 (Thu); Nov. 19-Thu & 23-Mon; Dec.17-Thu & 21-Mon",
+      "hours": "4:00 - 7:00;",
       "phone": "919-682-6466",
       "info": "",
       "prereq": "",
       "latitude": 36.0589489,
       "longitude": -78.8957437
+    },
+    {
+      "organizations": "Mt. Level Baptist (Two Fish, Five Loaves ) TEFAP",
+      "address": "317 Hebron Rd.",
+      "city": "Durham, NC, 27705",
+      "days": "Oct. 8 - Tu; Nov. 12 Thu; Dec. 10 -Thu",
+      "hours": "5:00 - 7:00",
+      "phone": "919-682-6467",
+      "info": "",
+      "prereq": "Must fill out TEFAP registration form",
+      "latitude": 36.0593424,
+      "longitude": -78.8943736
     },
     {
       "organizations": "Mt. Zion Christian Church",
@@ -508,7 +520,7 @@
       "organizations": "Nehemiah Church",
       "address": "514 N. Mangum St.",
       "city": "Durham, NC 27701",
-      "days": "Sat & Fri 10am (until 8/28 ONLY)",
+      "days": "Sat",
       "hours": "Sat 11:00 - 1:00; Fri 10am (thru 8/28 only)",
       "phone": "919 688-4203",
       "info": "Bag lunch  Tu, Wed, Thu, 12:00 - 1:00",
@@ -652,11 +664,11 @@
       "organizations": "St. Joseph AME Church",
       "address": "2521 Fayetteville St.",
       "city": "Durham, NC, 27707",
-      "days": "Wed TEMP CLOSED",
+      "days": "2nd & 4th Wed",
       "hours": "2:00 - 3:00",
       "phone": "919-683-1379",
-      "info": "resource list, household/clothes items",
-      "prereq": "Register Wed 1:30-2:45",
+      "info": "",
+      "prereq": "Drive thru & walk up",
       "latitude": 35.9683801,
       "longitude": -78.9023459
     },
@@ -688,7 +700,7 @@
       "organizations": "Urban Ministries",
       "address": "410 Liberty St.",
       "city": "Durham, NC, 27701",
-      "days": "Tu,",
+      "days": "Tu",
       "hours": "10:00 - 12:00 in county parking lot # 13 at Queen & Liberty St.",
       "phone": "919-682-0538",
       "info": "clothes, shelter, trainings, referral",
@@ -731,18 +743,6 @@
       "prereq": "Seniors Only, Call for Appt.",
       "latitude": 36.0281519,
       "longitude": -78.9100713
-    },
-    {
-      "organizations": "World Overcomers Church",
-      "address": "2933 S. Miami Blvd",
-      "city": "Durham, NC 27703",
-      "days": "Sat",
-      "hours": "11:00 - 1:00",
-      "phone": "919-402-9622",
-      "info": "",
-      "prereq": "Drive thru, Open Trunk",
-      "latitude": 35.9254416,
-      "longitude": -78.8434844
     }
   ]
 }
