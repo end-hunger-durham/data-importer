@@ -109,18 +109,6 @@
       "longitude": -78.8688657
     },
     {
-      "organizations": "Duke Mem Methodist, Collaborative Community Pantry (IFFS)",
-      "address": "503 W. Chapel Hill St.",
-      "city": "Durham, NC, 27701",
-      "days": "3rd Sat",
-      "hours": "CLOSED TEMP",
-      "phone": "919-536 4201",
-      "info": "",
-      "prereq": "",
-      "latitude": 35.9966452,
-      "longitude": -78.90906199999999
-    },
-    {
       "organizations": "Durham  Center for Senior Life",
       "address": "406 Rigsbee Ave",
       "city": "Durham, NC, 27702",
@@ -151,7 +139,7 @@
       "days": "Wed, Thur",
       "hours": "Wed & Thur -10:00 - 1:00; Wed 5:00 - 7:00.",
       "phone": "919-286-1964",
-      "info": "Habla Español, Financial assistance -call 2nd Mon",
+      "info": "Habla Español, utility bill assistance",
       "prereq": "Adult ID, Curb pickup, trunk open",
       "latitude": 35.9895291,
       "longitude": -78.92750099999999
@@ -182,15 +170,15 @@
     },
     {
       "organizations": "Fed Up Produce Distribution",
-      "address": "2000 Chapel Hill Rd  (Lakewood)",
+      "address": "2000 Chapel Hill Rd  (Lakewood - El Centro Hispano)",
       "city": "Durham, NC, 27707",
-      "days": "Every Other Friday - Dec. 18",
-      "hours": "",
+      "days": "Every Other Friday 1/29, 2/12, 2/26, 3/12, 3/26",
+      "hours": "11:00 - 1:00",
       "phone": "",
       "info": "Food delivery – fill out form at: http://bit.ly/fedupjune26",
-      "prereq": "",
-      "latitude": 35.9867024,
-      "longitude": -78.9274592
+      "prereq": "distribution in parking lot near El Centro Hispano",
+      "latitude": 35.9891349,
+      "longitude": -78.92781269999999
     },
     {
       "organizations": "Feed My Sheep",
@@ -428,7 +416,7 @@
       "hours": "7:00 - 10:00 am",
       "phone": "919-688-7838",
       "info": "",
-      "prereq": "ID",
+      "prereq": "ID, curbside delivery",
       "latitude": 35.9817788,
       "longitude": -78.89397850000002
     },
@@ -437,7 +425,7 @@
       "address": "1605 Bahama Rd.",
       "city": "Bahama, NC, 27503",
       "days": "2nd, 4th Wed",
-      "hours": "5:30 - 6:30",
+      "hours": "4:30 - 5:30",
       "phone": "919-477-4296",
       "info": "",
       "prereq": "",
@@ -511,7 +499,7 @@
       "days": "1st & 3rd Thu",
       "hours": "10:00 - 12:00",
       "phone": "919 943 5884",
-      "info": "- 4th Tue, 11:30 - 1:30",
+      "info": "TFAP 4th Tue, 11:30 - 1:30",
       "prereq": "",
       "latitude": 36.123013,
       "longitude": -78.9407576
@@ -565,7 +553,7 @@
       "longitude": -78.8434844
     },
     {
-      "organizations": "Rougemont  Community Food Pantry (Rougemont UMC)",
+      "organizations": "Rougemont  Community Food Pantry@Rougemont UMC",
       "address": "105 Red Mountain Rd.",
       "city": "Rougemont, NC, 27572",
       "days": "1st,  3rd Sat",
@@ -649,6 +637,18 @@
       "longitude": -78.9324235
     },
     {
+      "organizations": "UCAN (Urban Community AgriNomics) @ Mt. Level Baptist Church",
+      "address": "317 Hebron Rd.",
+      "city": "Durham, NC, 27705",
+      "days": "4th Wed (Jan 27, Feb 24, Mar 24)",
+      "hours": "10:00:00 AM  Produce distribution",
+      "phone": "919-682-6467",
+      "info": "",
+      "prereq": "Fresh Organic Vegetables straight from the UCAN garden",
+      "latitude": 36.0593424,
+      "longitude": -78.8943736
+    },
+    {
       "organizations": "United for Christ - Child's Cry Pantry",
       "address": "4005 Holt School Rd.",
       "city": "Durham, NC, 27705",
@@ -677,7 +677,7 @@
       "address": "Asbury Methodist  Church 806 Clarendon St",
       "city": "Durham, NC, 27705",
       "days": "Last Thu",
-      "hours": "11:00 - 1:00, emergencies",
+      "hours": "11:00 - 1:00,",
       "phone": "919-286-0332",
       "info": "emergency food - call",
       "prereq": "call for appt.,  ID, proof of address",
