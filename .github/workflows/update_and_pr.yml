@@ -1,0 +1,37 @@
+name: Update pantries.json and open PR
+on: 
+  push:
+    branches:
+      - master
+  schedule: 
+    # Every Friday at 00:00 UTC
+    - cron: '0 0 * * 5'
+jobs:
+  update_and_pr:
+    runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v3
+        - uses: actions/setup-node@v3
+          with:
+            node-version: 18
+        - name: Get current date
+          id: date
+          run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+        - name: update pantries
+          run: node importer.js ${{ secrets.GEOCODE_API_KEY }}
+        - name: create pull request
+          run: |
+            date="${{ steps.date.outputs.date }}"
+            branch="${date}"
+            message="${date} - pantries update"
+            if [ ! -z "$(git status --porcelain)" ];
+            then
+              git checkout -b "${branch}"
+              git config user.name "Rob Gries"
+              git config user.email robert.w.gries@gmail.com
+              git commit -m "${message}"
+              git push -u origin "${branch}"
+              gh pr create -B master -H "${branch}" --title "${message}" --body 'Created by Github action'
+            fi
+          env:
+              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
