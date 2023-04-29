@@ -29,6 +29,7 @@ jobs:
             git checkout -b "${branch}"
             git config user.name "Rob Gries"
             git config user.email robert.w.gries@gmail.com
+            git add pantries.json
             git commit -m "${message}"
             git push -u origin "${branch}"
             gh pr create -B master -H "${branch}" --title "${message}" --body 'Created by Github action'
